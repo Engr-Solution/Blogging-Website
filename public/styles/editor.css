@@ -1,0 +1,62 @@
+@import './style.css';
+
+.blog-banner {
+    width: 100%;
+    height: 400px;
+    background: #e0e0e0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.blog-banner .uploadImage {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+.blog-banner .uploadImage img {
+    height: 40px;
+}
+.blog-post textarea {
+    width: 100%;
+    min-width: 400px;
+    min-height: 50px;
+    border: none;
+    outline: none;
+    padding: 10px ;
+    display: block;
+    white-space: pre-wrap;
+}
+textarea#artitle {
+    min-height: 150px;
+}
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #5e5e5e;
+}
+textarea::placeholder {
+    color: #5e5e5e;
+}
+.btns-group button,
+.btns-group label {
+    background: rgb(66, 66, 66);
+    color: #fff;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btns-group button:hover,
+.btns-group button:active,
+.btns-group label:hover,
+.btns-group label:active {
+    background: #5e5e5e;
+}

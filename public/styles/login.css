@@ -1,0 +1,79 @@
+@import './style.css';
+
+body {
+    height: 100vh;
+}
+.firebaseui-container {
+    max-width: 100% !important;
+}
+.firebaseui-container button:hover {
+    opacity: 0.95;
+}
+.firebaseui-idp-list {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 400px;
+}
+.login_form .blurBg{
+    background-color: rgba(82, 114, 255, 0.824);
+    background: url('../images/bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.login_form .form_typo {
+    backdrop-filter: blur(4px);
+}
+.form_wrapper, .typo_wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.form_wrapper > div, .typo_wrapper > div {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: 5px;
+    position: absolute;
+    transition: .3s linear;
+}
+.form_wrapper > div::-webkit-scrollbar {
+    width: 5px;
+}
+.form_wrapper > div::-webkit-scrollbar-track {
+    background: rgb(201, 201, 201);
+    border-radius: 15px;
+}
+.form_wrapper > div::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: #202020;
+    border-radius: 10px;
+}
+.signin_form {
+    left: 0;
+}
+.signup_form {
+    left: 100%;
+}
+.signin_typo {
+    left: 0;
+}
+.signup_typo {
+    left: -100%;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .login_form {
+        padding: 0 12.5%;
+    }
+}

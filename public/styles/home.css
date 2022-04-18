@@ -1,0 +1,40 @@
+@import './style.css';
+
+.header {
+    height: 100vh;
+    background: url('../images/bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #383838;
+    text-align: center;
+    font-variant: small-caps;
+}
+.header .fill {
+    color: #f30808;
+}
+.header .no-fill {
+    background: transparent;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+.blog-btn {
+    background: #5271ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-variant: normal;
+}
+.blog-btn:hover {
+    color: #fff;
+    background: rgb(97, 126, 255);
+}
+.blogs-section {
+    color: #383838;
+}
+.blogs-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}

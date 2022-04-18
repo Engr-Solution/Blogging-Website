@@ -1,0 +1,18 @@
+@import './style.css';
+
+.editBtn{
+    display: none !important;
+}
+
+.login {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: #e0e0e0;
+    z-index: 99;
+}
